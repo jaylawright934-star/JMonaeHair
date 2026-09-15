@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JMonaeHair | Braiding in Mesa, Arizona</title>
+<meta name="description" content="JMonaeHair — at-home braiding in Mesa, Arizona. View services, policies and submit your appointment request. $25 deposit required.">
+<style>
+:root{
+  --pink:#f58b9a; --pink-dark:#e96f82; --cream:#fffaf9; --ink:#39252b; --line:#f6c4cc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+a{color:inherit}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,250,249,.95);backdrop-filter:blur(10px);border-bottom:1px solid #f7dce0}
+.nav-inner{max-width:1050px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:cursive;font-size:28px;color:var(--pink-dark);font-style:italic}
+.nav a{text-decoration:none;font-size:14px;margin-left:18px}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:80px 22px 65px;
+background:radial-gradient(circle at 50% 30%,#fff 0,#fff7f7 38%,#ffeef1 100%)}
+.hero-inner{max-width:850px}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:var(--pink-dark)}
+h1{font-family:cursive;font-style:italic;font-weight:500;font-size:clamp(60px,12vw,120px);line-height:.9;margin:18px 0;color:var(--pink)}
+.hero p{font-size:20px;line-height:1.6;max-width:650px;margin:25px auto;color:#62484e}
+.btn{display:inline-block;border:0;border-radius:999px;background:var(--pink);color:white;text-decoration:none;padding:15px 25px;font-size:15px;cursor:pointer;box-shadow:0 10px 25px rgba(245,139,154,.22);transition:.2s}
+.btn:hover{transform:translateY(-2px);background:var(--pink-dark)}
+.btn.secondary{background:white;color:var(--pink-dark);border:1px solid var(--line);box-shadow:none}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+section{max-width:1050px;margin:auto;padding:78px 22px}
+.section-title{text-align:center;font-family:cursive;font-style:italic;font-size:52px;font-weight:500;color:var(--pink);margin:0 0 10px}
+.section-sub{text-align:center;color:#73585f;margin:0 auto 42px;max-width:650px;line-height:1.6}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #f7dce0;border-radius:24px;padding:28px;box-shadow:0 8px 25px rgba(75,35,45,.05)}
+.card h3{font-family:cursive;font-size:30px;font-style:italic;color:var(--pink-dark);margin:0 0 8px}
+.price{font-size:34px;color:var(--ink);margin:4px 0 12px}
+.card p{line-height:1.6;color:#6b555b}
+.addon{border:2px dashed var(--line);background:#fff7f8}
+.badge{display:inline-block;padding:6px 10px;border-radius:99px;background:#ffe6ea;color:var(--pink-dark);font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.guidelines{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.guide{padding:25px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.guide h3{margin:0 0 8px;color:var(--pink-dark);font-family:cursive;font-size:28px;font-style:italic}
+.guide p{line-height:1.65;margin:0;color:#684f55}
+.booking-wrap{background:#fff;border:1px solid #f5d9de;border-radius:30px;padding:32px;box-shadow:0 15px 40px rgba(75,35,45,.07);max-width:760px;margin:auto}
+form{display:grid;gap:16px}
+label{font-size:14px}
+input,select,textarea{width:100%;margin-top:7px;padding:14px 15px;border:1px solid #eacbd1;border-radius:12px;background:#fffafa;font:inherit;color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.checkbox{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5}
+.checkbox input{width:auto;margin-top:3px}
+.deposit{background:#fff4f6;border-radius:18px;padding:18px;line-height:1.55}
+.notice{font-size:13px;color:#745c62}
+footer{background:#3d292f;color:#fff5f6;text-align:center;padding:50px 22px}
+footer .logo{color:#ffb3bd}
+.socials{display:flex;justify-content:center;gap:20px;margin:18px 0}
+.socials a{color:#ffd5db;text-decoration:none}
+.small{font-size:12px;color:#d7bfc4}
+@media(max-width:760px){
+ .nav-inner{flex-direction:column}.nav a{margin:0 7px}
+ .services{grid-template-columns:1fr}.guidelines{grid-template-columns:1fr}.row{grid-template-columns:1fr}
+ h1{font-size:70px}.section-title{font-size:44px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo">JMonaeHair</div>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#policies">Policies</a>
+      <a href="#book">Book</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Mesa, Arizona • At-Home Braiding</div>
+    <h1>JMonaeHair</h1>
+    <p>Beautiful braids, clean parts, and a soft, feminine experience — right from my home studio in Mesa.</p>
+    <div class="actions">
+      <a class="btn" href="#book">Book an Appointment</a>
+      <a class="btn secondary" href="#services">View Services</a>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <h2 class="section-title">Braiding Prices</h2>
+  <p class="section-sub">All braids are mid-back length. Wanting a larger size may increase the charge.</p>
+  <div class="services">
+    <article class="card">
+      <h3>Small</h3><div class="price">$100</div>
+      <p>Small braids at mid-back length.</p>
+    </article>
+    <article class="card">
+      <h3>Medium</h3><div class="price">$75</div>
+      <p>Medium braids at mid-back length.</p>
+    </article>
+    <article class="card">
+      <h3>Large</h3><div class="price">$50</div>
+      <p>Large braids at mid-back length.</p>
+    </article>
+    <article class="card">
+      <h3>Cornrows / Straight Backs</h3><div class="price">$35</div>
+      <p>Clean, simple straight-back styling.</p>
+    </article>
+    <article class="card">
+      <h3>Two-Strand Braids / Twists</h3><div class="price">$25</div>
+      <p>Two-strand braids or twists.</p>
+    </article>
+    <article class="card addon">
+      <span class="badge">Add-on</span>
+      <h3>Boho</h3><div class="price">+$25</div>
+      <p>Add boho pieces to your braid service. Bring boho hair of your choice — synthetic, human, or blend.</p>
+    </article>
+  </div>
+</section>
+
+<section id="guidelines">
+  <h2 class="section-title">Appointment Guidelines</h2>
+  <div class="guidelines">
+    <div class="guide"><h3>Come Prepared</h3><p>Please bring your own packs of expression pre-stretched hair.</p></div>
+    <div class="guide"><h3>Boho Hair</h3><p>Bring any boho hair of your choice (synthetic, human, or blend) if you select the Boho add-on.</p></div>
+    <div class="guide"><h3>Hair Prep</h3><p>Come with your hair washed and blow-dried.</p></div>
+    <div class="guide"><h3>No Products</h3><p>Ensure <strong>NO PRODUCTS</strong> are in your hair prior to your appointment.</p></div>
+  </div>
+</section>
+
+<section id="policies">
+  <h2 class="section-title">Policies</h2>
+  <div class="guidelines">
+    <div class="guide"><h3>10 Minute Grace Period</h3><p>You have a 10-minute grace period for your appointment.</p></div>
+    <div class="guide"><h3>After 10 Minutes</h3><p>After the 10-minute grace period, your appointment will be <strong>CANCELLED</strong>.</p></div>
+    <div class="guide"><h3>Location</h3><p>Appointments are at my home-based studio in Mesa, Arizona. The exact address can be provided after your appointment is confirmed.</p></div>
+  </div>
+</section>
+
+<section id="book">
+  <h2 class="section-title">Book With Me</h2>
+  <p class="section-sub">Choose your service and add Boho if you want it, then review your appointment details before payment.</p>
+
+  <div class="booking-wrap">
+    <form id="bookingForm">
+      <div class="row">
+        <label>Full name<input required name="name" placeholder="Your name"></label>
+        <label>Phone number<input required name="phone" type="tel" placeholder="(555) 555-5555"></label>
+      </div>
+
+      <label>Email<input required name="email" type="email" placeholder="you@example.com"></label>
+
+      <div class="row">
+        <label>Service
+          <select required name="service" id="service">
+            <option value="">Select a service</option>
+            <option value="100">Small Braids — $100</option>
+            <option value="75">Medium Braids — $75</option>
+            <option value="50">Large Braids — $50</option>
+            <option value="35">Cornrows / Straight Backs — $35</option>
+            <option value="25">Two-Strand Braids / Twists — $25</option>
+          </select>
+        </label>
+
+        <label>Boho add-on
+          <select name="boho" id="boho">
+            <option value="0">No Boho</option>
+            <option value="25">Yes, add Boho +$25</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Preferred date<input required name="date" type="date"></label>
+        <label>Preferred time<input required name="time" type="time"></label>
+      </div>
+
+      <label>Notes / inspiration<textarea name="notes" placeholder="Anything I should know about your appointment?"></textarea></label>
+
+      
+
+      <div class="deposit">
+        <strong>Appointment total</strong>
+        <div style="margin-top:10px;display:flex;justify-content:space-between">
+          <span>Service</span><strong id="servicePrice">$0</strong>
+        </div>
+        <div style="margin-top:6px;display:flex;justify-content:space-between">
+          <span>Boho add-on</span><strong id="bohoPrice">$0</strong>
+        </div>
+        <hr style="border:0;border-top:1px solid #efcbd2;margin:14px 0">
+        <div style="display:flex;justify-content:space-between;font-size:18px">
+          <strong>Total</strong><strong id="bookingTotal">$0</strong>
+        </div>
+      </div>
+
+      <button class="btn" type="submit">Continue to Checkout</button>
+      <div id="result" class="notice"></div>
+    </form>
+
+    <div id="checkout" style="display:none;margin-top:25px;border-top:1px solid #f0d3d8;padding-top:25px">
+      <h3 style="font-family:cursive;font-size:34px;font-style:italic;color:var(--pink-dark);margin:0 0 8px">Checkout</h3>
+      <p class="notice">Review your booking details below.</p>
+      <div class="deposit" id="checkoutSummary"></div>
+      <a id="paymentButton" class="btn" href="#" target="_blank" rel="noopener" style="display:block;text-align:center;margin-top:16px">Continue to Payment</a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">JMonaeHair</div>
+  <p>Mesa, Arizona • Home-Based Braiding</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/jmonaehairr" target="_blank" rel="noopener">Instagram @jmonaehairr</a>
+    <a href="https://www.tiktok.com/@jaaylahair" target="_blank" rel="noopener">TikTok @jaaylahair</a>
+  </div>
+  <div class="small">© 2026 JMonaeHair. All rights reserved.</div>
+</footer>
+
+<script>
+const service = document.getElementById('service');
+const boho = document.getElementById('boho');
+const servicePrice = document.getElementById('servicePrice');
+const bohoPrice = document.getElementById('bohoPrice');
+const bookingTotal = document.getElementById('bookingTotal');
+const checkout = document.getElementById('checkout');
+const checkoutSummary = document.getElementById('checkoutSummary');
+const bookingForm = document.getElementById('bookingForm');
+
+function updateCheckout() {
+  const serviceAmount = Number(service.value || 0);
+  const bohoAmount = Number(boho.value || 0);
+  servicePrice.textContent = '$' + serviceAmount;
+  bohoPrice.textContent = '$' + bohoAmount;
+  bookingTotal.textContent = '$' + (serviceAmount + bohoAmount);
+}
+service.addEventListener('change', updateCheckout);
+boho.addEventListener('change', updateCheckout);
+updateCheckout();
+
+bookingForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const form = new FormData(this);
+  const name = form.get('name');
+  const serviceAmount = Number(form.get('service') || 0);
+  const bohoAmount = Number(form.get('boho') || 0);
+  const serviceName = service.options[service.selectedIndex].text.replace(/ — \$\d+$/, '');
+  const date = form.get('date');
+  const time = form.get('time');
+
+  const total = serviceAmount + bohoAmount;
+
+  checkoutSummary.innerHTML = `
+    <div style="display:flex;justify-content:space-between"><span>Client</span><strong>${name}</strong></div>
+    <div style="display:flex;justify-content:space-between;margin-top:7px"><span>Service</span><strong>${serviceName} — $${serviceAmount}</strong></div>
+    <div style="display:flex;justify-content:space-between;margin-top:7px"><span>Boho</span><strong>${bohoAmount ? '+$25' : 'No Boho'}</strong></div>
+    <div style="display:flex;justify-content:space-between;margin-top:7px"><span>Appointment</span><strong>${date} at ${time}</strong></div>
+    <hr style="border:0;border-top:1px solid #efcbd2;margin:14px 0">
+    <div style="display:flex;justify-content:space-between"><span>Service total</span><strong>$${total}</strong></div>
+    <div style="display:flex;justify-content:space-between;margin-top:7px"><span>Total</span><strong>$${total}</strong></div>
+  `;
+
+  checkout.style.display = 'block';
+  checkout.scrollIntoView({behavior:'smooth', block:'center'});
+});
+</script>
+</body>
+</html>
